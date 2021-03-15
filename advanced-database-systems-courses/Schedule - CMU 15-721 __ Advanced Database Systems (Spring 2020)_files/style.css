@@ -1,0 +1,596 @@
+body {
+    padding-top: 70px;
+}
+
+.navbar-brand {
+/*     border: 1px solid red; */
+    padding-top: 10px;
+    margin-top: 8px;
+}
+.navbar-nav {
+    margin-top: 4px;
+}
+h2 {
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 5px;
+    font-size: 160%;
+}
+h3 {
+    font-size: 120%;
+    font-weight: bold;
+}
+pre {
+    color: #3E3F3A;
+    font-weight: bold;
+}
+
+#sidebar .list-group, #sidebar .list-group-item {
+    background-color: transparent;
+}
+
+/* for list-groups nested within a list-group-item, reset the bottom margin */
+.list-group-item > .list-group {
+    margin-bottom: 0px;
+}
+
+/* for list-group-items nested within a list-group-item, reset the bottom
+   padding of the last item, b/c the containing item has paddimg already 
+ */
+.list-group-item .list-group-item:last-child {
+    padding-bottom: 0px;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.tag-0 {
+    font-size: 16pt;
+}
+
+.tag-1 {
+    font-size: 14pt;
+}
+
+.tag-2 {
+    font-size: 12pt;
+}
+
+.tag-3 {
+    font-size: 10pt;
+}
+
+.tag-4 {
+    font-size: 8pt;
+}
+
+#aboutme {
+    padding-top: 0px;
+    padding-bottom: 5px;
+    -ms-word-break: normal;
+    word-break: normal;
+}
+
+#sidebar {
+    padding-top: 0px;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+#sidebar a {
+    color: inherit;
+}
+
+.icon-label {
+    margin-left: 10px;
+}
+
+/* Example for how to control spacing between icon and label in specific
+   lists in the sidebar. To change, override in your CUSTOM_CSS           */
+#sidebar #social i {
+    margin-right: 3px;
+}
+
+a, a:hover {
+    color: inherit;
+}
+
+.entry-title {
+    font-weight: bold;
+}
+
+.entry-content a {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+.entry-content a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+.entry-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.entry-content figcaption, .caption {
+    font-size: small;
+    margin-bottom: 2px;
+}
+
+.floatright, .align-right {
+    float: right;
+}
+
+.floatleft, .align-left {
+    float: left;
+}
+
+.floatcenter, .align-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.floatright, .align-right {
+    margin-left: 4px;
+}
+
+figure.floatleft, .align-left {
+    margin-right: 4px;
+}
+
+figure.floatcenter, .align-center {
+    margin-bottom: 11px;
+}
+
+.highlighttable pre {
+    /* Removes bootstrap default margin-bottom */
+    margin-bottom: 0px;
+}
+
+.highlighttable {
+    /* Adds them margin-bottom to highlightable instead of <pre> */
+    margin-bottom: 11px;
+}
+
+.highlighttable {
+    width: 100%;
+}
+
+#categories ul, #tags ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+}
+
+.docutils.footnote td.label {
+    display: table-cell;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    text-align: inherit;
+    white-space: inherit;
+    border-radius: inherit;
+}
+
+.categories-timestamp {
+    color: #AAAAAA;
+    font-size: 0.9em;
+    margin-right: 10px;
+}
+
+.tagcloud li {
+    padding: 0px;
+}
+
+#banner {
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: scroll;
+    background-size: cover; /*100% auto;*/
+    background-color: black; /*#C4C4C4;*/
+    margin: 0 0 20px;
+    padding: 70px 0; /*controls padding around inner text*/
+    position: relative;
+}
+
+#banner .copy {
+    background: none repeat scroll 0 0 rgba(44, 62, 80, 0.7);
+    display: inline;
+    float: right;
+    text-align: right;
+    max-width: 900px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+#banner h1 {
+    color: #fff;
+    font-family: "HelveticaNeue-CondensedBold","Helvetica Neue CE 600 Condensed","Helvetica Neue LT Condensed","Helvetica Neue 600 Condensed","HelveticaNeue-BoldCondensed","Helvetica Neue BoldCondensed","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 80px;
+    font-stretch: condensed;
+    font-weight: 700;
+    line-height: 0.9;
+    margin: 0;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #CCC;
+}
+#banner h2 {
+    border: none;
+    color: white;
+}
+#banner .intro {
+    color: #fff;
+    font-size: 40px;
+    padding-top: 0px;
+    margin-bottom: -5px;
+    line-height: 1.33;
+    opacity: 0.75;
+}
+#banner .btn, #banner .intro {
+    margin-left: 4px;
+}
+
+/* Solutions for mobile and small screens  */
+@media (max-width: 600px) {
+    #banner h1{
+       font-size: 40px !important;
+    }
+    #banner .intro {
+        font-size: 20px;
+    }
+}
+#footer-well {
+    margin-bottom: 0px;
+}
+footer img {
+    max-width: 175px;
+    clear: both;
+}
+
+/*Code horizontal scrolling?*/
+.highlight pre * {
+  white-space: nowrap;    // this sets all children inside to nowrap
+}
+
+.highlight pre {
+  overflow-x: auto;       // this sets the scrolling in x
+}
+
+.highlight pre {
+  white-space: pre;       // forces <code> to respect <pre> formatting
+}
+tr:target {
+    background-color: #FFFFCC !important;
+    border: 3px solid #E74C3C;
+/*     font-weight: bold; */
+}
+.calendar-section {
+    vertical-align: middle !important;
+    writing-mode: sideways-lr;
+    width: 4%;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+td.calendar-section {
+    background: rgba(44, 62, 80, 0.75) !important; /* #2C3E50 */
+    border: 1px solid #ecf0f1 !important;
+    font-size: 105%;
+    text-transform: uppercase;
+}
+td.calendar-section div {
+/*     width: 50px; */
+/*     height: a; */
+/*     transform: rotate(-90deg); */
+    writing-mode: sideways-lr;
+/*     -webkit-transform: rotate(-90deg); /* Safari/Chrome */ */
+/*     -moz-transform: rotate(-90deg); /* Firefox */ */
+/*     -o-transform: rotate(-90deg); /* Opera */ */
+/*     -ms-transform: rotate(-90deg); /* IE 9 */ */
+}
+/*.calendar-activity a[href $='.pdf'] {
+    padding-right: 18px;
+    background: transparent url(../../images/pdf.gif) no-repeat center right;
+}*/
+.calendar-activity .optional {
+    font-weight: bold;
+}
+.calendar-activity b {
+    font-size: 120%;
+    line-height: 1;
+}
+.calendar-activity .private {
+    font-weight: bold;
+    background: rgba(231, 76, 60, 0.75) !important; /* #2C3E50 */
+    color: white;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.calendar-activity span.special {
+    font-style: italic;
+    color: #e03616;
+}
+.table ul {
+    padding-left: 25px;
+}
+
+.calendar-date {
+    width: 12%;
+    font-size: 95%;
+}
+.calendar-video, .calendar-slides, .calendar-notes {
+    text-align: center;
+}
+
+.anchor {
+    text-decoration: none;
+    border: none !important;
+    line-height: 1;
+}
+.anchor-icon {
+    vertical-align: middle;
+    visibility: hidden;
+}
+.calendar-date:hover .anchor-icon {
+    visibility: visible;
+}
+
+span.best-project {
+    background-color: #555555;
+    border-radius: 2%;
+    color: #F1C40F;
+    padding: 1px;
+    /*font-size: 110%;*/
+}
+
+.fa-star {
+    color: #F1C40F;
+    /*font-size: 110%;*/
+}
+.fa-stack {
+    font-size: 75%;
+}
+
+li.secondary {
+/*     color: #75776D; */
+}
+div.assignments {
+    padding: 2px;
+    margin-top: 4px;
+}
+div.assignments span {
+    font-size: 110%;
+}
+
+p.warning {
+    padding: 15px;
+    font-size: 120%;
+}
+
+i.trigger-badge {
+    color: red;
+}
+a.schedule-badge {
+    border: none !important;
+}
+a.schedule-badge:hover {
+    background: #FFFFCC;
+}
+
+.navbar .nav {
+    font-size: 16px;
+}
+.navbar-right i {
+    font-size: 135%;
+}
+
+section.course-info {
+    padding: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.course-info p {
+    font-size: 120%;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+.course-info h4 {
+    font-weight: bold;
+}
+.course-info-list li {
+    margin-left: 30px;
+}
+.course-info ul {
+    min-height: 75px;
+}
+p.acknowledgements {
+    text-justify: none;
+    font-size: 100%;
+/*     line-height: 10pt; */
+/*     margin-bottom: 10px; */
+/*     padding-bottom: 0px; */
+}
+ul.sponsors {
+/*     border: 1px solid red; */
+    min-height: 50px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.sponsors li {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+}
+.sponsors img {
+    max-width: 225px;
+    height: auto;
+}
+
+.showcase p {
+    padding-top: 10px;
+    text-align: justify;
+}
+.showcase .row {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.showcase img {
+    border: 1px solid #3E3F3A;
+}
+.showcase h3 {
+    font-size: 150%;
+    margin-top: 0px;
+}
+
+
+/* Color Fixes */
+.bg-info, .tr-info > td {
+    background-color: #d9edf7;
+    color: #333333;
+}
+.bg-danger, .tr-danger > td {
+    background-color: #f2dede;
+    color: #333333;
+}
+.bg-success, .table > thead > tr > td.success, .table > tbody > tr > td.success, .table > tfoot > tr > td.success, .table > thead > tr > th.success, .table > tbody > tr > th.success, .table > tfoot > tr > th.success, .table > thead > tr.success > td, .table > tbody > tr.success > td, .table > tfoot > tr.success > td, .table > thead > tr.success > th, .table > tbody > tr.success > th, .table > tfoot > tr.success > th {
+    background-color: #dff0d8;
+    color: #333333;
+}
+.bg-warning, .table > thead > tr > td.warning, .table > tbody > tr > td.warning, .table > tfoot > tr > td.warning, .table > thead > tr > th.warning, .table > tbody > tr > th.warning, .table > tfoot > tr > th.warning, .table > thead > tr.warning > td, .table > tbody > tr.warning > td, .table > tfoot > tr.warning > td, .table > thead > tr.warning > th, .table > tbody > tr.warning > th, .table > tfoot > tr.warning > th {
+    background-color: #fcf8e3;
+    color: #333333;
+}
+
+/** COURSE PEOPLE **/
+table.course-personnel {
+    width: 100%;
+}
+.course-personnel img {
+    border-radius: 50%;
+}
+.course-personnel th {
+    font-weight: bold;
+    text-align: left;
+}
+.course-personnel td {
+    vertical-align: middle !important;
+    padding: 2px;
+}
+.personnel-photo {
+    width: 14%;
+    text-align: center;
+}
+.personnel-name {
+    width: 31%;
+}
+.personnel-hours {
+    width: 25%;
+}
+.personnel-location {
+    width: 30%;
+}
+table.instructors img {
+/*     max-width: 100px; */
+    max-width: 80px;
+}
+/*table.tas img {
+    max-width: 80px;
+}*/
+    
+
+@media (max-width: 1024px) {
+    .sponsors img {
+        max-width: 150px;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar-brand {
+        margin-top: 4px;
+    }
+    span.best-project {
+        display: block;
+        text-align: center;
+        margin-top: 12px;
+    }
+    h1 {
+        font-size: 180%;
+    }
+    .table {
+        font-size: 70%;
+    }
+    .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+        padding: 4px !important;
+    }
+    .table ul {
+        margin-left: 10px;
+        padding-left: 2px;
+        font-size: 90%;
+    }
+    .table li {
+        margin-bottom: 10px;
+    }
+    .calendar-date {
+        font-size: 90%;
+        width: 15%;
+    }
+    .calendar-activity b {
+        font-size: inherit;
+    }
+    .calendar-video, .calendar-slides, .calendar-notes {
+        width: 5%;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .anchor {
+        display: block;
+    }
+    
+/*    .calendar-activity a[href $='.pdf'] {
+        padding-right: 10px;
+        background: transparent url(../../static/images/pdf.gif) no-repeat center right;
+        background-size: 8px 8px;
+    }*/
+    #banner h1 {
+        font-size: 175%;
+    }
+    .course-info p {
+        font-size: 95%;
+        padding-bottom: 10px;
+    }
+    #footer-well {
+        font-size: 85%;
+    }
+    footer img {
+        max-width: 75% !important;
+    }
+    footer div.well {
+/*         border: 1px solid red; */
+        padding: 10px;
+    }
+    .showcase img {
+        margin-bottom: 20px;
+    }
+    table.instructors img {
+        max-width: 60px;
+    }
+}
+        
+}
